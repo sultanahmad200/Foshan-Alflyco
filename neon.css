@@ -12,7 +12,7 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #0073AB;
+    --main-color: #024769;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -20,7 +20,7 @@
 .dark-mode {
     --bg-color: #17181A;
     --text-color: #fdfdfd;
-    --main-color: #025e8b;
+    --main-color: rgb(3, 55, 82);
     --shadow-color: rgba(0, 0, 0, .9);
 }
 
@@ -121,7 +121,7 @@ section {
     display: flex;
     align-items: center;
     margin-top: 1rem;
-    background: #0072ab48;
+    background: #015985a8;
 }
 
 .home .home-content {
@@ -139,6 +139,7 @@ section {
     font-weight: 700;
     line-height: .3;
     margin-bottom: 1rem;
+    text-shadow: black 1px 2px 1px;
 }
 
 .home-content p {
@@ -315,7 +316,7 @@ span {
 .portfolio .portfolio-container {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
@@ -391,7 +392,7 @@ span {
     border: solid .1rem rgba(0, 0, 0, 0);
     border-radius: 1rem;
     /* padding: 1rem 30rem; */
-    background: #0072ab48;
+    background: #015985a8;
 }
 
 .contactbox p{
@@ -439,7 +440,8 @@ span {
 }
 
 .footer-iconTop a:hover {
-    outline-color: var(--white-color);
+    background: var(--main-color);
+    /* outline-color: var(--text-color); */
 }
 
 .footer-iconTop a i {
@@ -653,26 +655,6 @@ span {
         padding: 0 3% 30rem;
     }
 
-    .home .profession-box .portfolio:nth-child(1) {
-        transform: rotate(-90deg)translate(-110px, -220px);
-    }
-
-    .home .profession-box .portfolio:nth-child(2) {
-        transform: rotate(0deg)translate(5px, -335px);
-    }
-
-    .home .profession-box .portfolio:nth-child(3) {
-        transform: rotate(90deg)translate(-105px, -440px);
-    }
-
-    .home .profession-box .portfolio:nth-child(4) {
-        transform: rotate(180deg)translate(-210px, -335px);
-    }
-
-    .contact form .input-box input {
-        width: 100%;
-    }
-
     .btn-whatsapp img {
         width: 8rem;
         margin: 97rem 0 0 40rem;
@@ -721,7 +703,13 @@ span {
 
 #footer .column p {
     font-size: 1.6rem;
-    color: var(--text-color);
+    color: var(--bg-color);
+}
+
+#footer .column p:hover{
+    color: var(--main-color);
+    text-shadow: #000000 1px 1px 1px;
+    transition: .1s;
 }
 
 @media(max-width: 767px) {
